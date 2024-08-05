@@ -16,20 +16,28 @@ public class EmployeeWage {
         }else if(n==0){
             System.out.println("Employee is absent ");
              present = false;
-        }else{
+        }else if(n==3){
+            System.out.println("Employee is present");
+
+        }else {
             System.out.println("Enter valid number ");
         }
 
-        dailyWage(present);
+        dailyWage(present,n);
 
     }
-    static void dailyWage(boolean pr){
+    static void dailyWage(boolean pr,int n){
         int fulldayhr = 8;
         int wageperhr = 20;
 
-        if(pr){
+        if(n==1){
             double dailyEmployeeWage = wageperhr * fulldayhr;
             System.out.println("Daily Employee Wage is : " + dailyEmployeeWage);
+        }else if(n==3){
+            double halfDayWage = wageperhr * 4;
+            System.out.println("Part time day wage is " + halfDayWage);
         }
+
+
     }
 }
