@@ -35,15 +35,21 @@ public class EmployeeWage {
             case 1:
                double dailyEmployeeWage = wageperhr * fulldayhr;
                 System.out.println("Daily Employee Wage is : " + dailyEmployeeWage);
+                monthalyWage(dailyEmployeeWage);
+
                 break;
             case 2:
                 double halfDayWage = wageperhr * halfdayhr;
                 System.out.println("Part time day wage is " + halfDayWage);
                 break;
             default:
-                //System.out.println("Employee is absent ");
                 break;
         }
 
+    }
+    static void monthalyWage(double dailyEmployeeWage){
+        int monthWorkingDay = 20;
+        double monthalyEmployeeWage = dailyEmployeeWage * monthWorkingDay;
+        System.out.println("Monthly Employee Wage is : " + monthalyEmployeeWage);
     }
 }
