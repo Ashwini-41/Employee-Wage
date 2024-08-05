@@ -1,9 +1,11 @@
 import java.util.*;
 
 public class EmployeeWage {
+    static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
         System.out.println("Welcome to EmployeeWage Computation Program : ");
-        Scanner sc = new Scanner(System.in);
+        //Scanner sc = new Scanner(System.in);
         System.out.println("Enter number : ");
 
         int n = sc.nextInt();
@@ -22,6 +24,7 @@ public class EmployeeWage {
         }
 
         dailyWage(present, n);
+        wageupcondition(n);
 
     }
 
@@ -51,5 +54,25 @@ public class EmployeeWage {
         int monthWorkingDay = 20;
         double monthalyEmployeeWage = dailyEmployeeWage * monthWorkingDay;
         System.out.println("Monthly Employee Wage is : " + monthalyEmployeeWage);
+
+        
     }
+    static void wageupcondition(int n){
+        
+        int hr = 100;
+        int day = 20;
+        double totalwage = hr * 20;
+       
+        if(n == 1){
+            while (hr <= 100 && day <= 20) {
+                System.out.println("Employee wage for 100hr and 20 days is : " + totalwage);
+                hr++;
+                day++;
+            }
+        
+        }
+
+    }
+
+
 }
