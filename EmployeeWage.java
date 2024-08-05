@@ -20,9 +20,16 @@ public class EmployeeWage {
             System.out.println("Enter valid number ");
         }
 
+        dailyWage(present);
 
+    }
+    static void dailyWage(boolean pr){
+        int fulldayhr = 8;
+        int wageperhr = 20;
 
-        
-
+        if(pr){
+            double dailyEmployeeWage = wageperhr * fulldayhr;
+            System.out.println("Daily Employee Wage is : " + dailyEmployeeWage);
+        }
     }
 }
