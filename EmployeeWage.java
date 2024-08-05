@@ -65,7 +65,7 @@ public class EmployeeWage {
        
         if(n == 1){
             while (hr <= 100 && day <= 20) {
-                System.out.println("Employee wage for 100hr and 20 days is : " + totalwage);
+                System.out.println("Employee wage for " + hr +" and " + day + " days is : " + totalwage);
                 hr++;
                 day++;
             }
